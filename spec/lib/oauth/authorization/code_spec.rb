@@ -23,6 +23,7 @@ describe Doorkeeper::OpenidConnect::OAuth::Authorization::Code do
     end
 
     it 'stores the nonce' do
+      binding.b
       subject.issue_token
 
       expect(Doorkeeper::OpenidConnect::Request).to have_received(:create!).with({

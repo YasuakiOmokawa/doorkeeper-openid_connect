@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'pry-byebug'
+require 'debug'
 
 puts "====> Doorkeeper version: #{Doorkeeper::VERSION::STRING}"
 
