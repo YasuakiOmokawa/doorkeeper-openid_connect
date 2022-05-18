@@ -7,6 +7,7 @@ module Doorkeeper
         attr_reader :nonce
 
         def initialize(server, attrs = {}, resource_owner = nil)
+          binding.b unless attrs.empty?
           super
           @nonce = attrs[:nonce]
         end
